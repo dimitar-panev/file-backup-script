@@ -44,7 +44,7 @@ def create_backup(source_dir, backup_base_dir, keep_days=7):
             
             if folder_time < cutoff_time:
                 shutil.rmtree(backup_folder)
-                print(f"Deleted old backup: {backup_folder}")
+                print(f"Deleted old backup: {backup_folder}") # Check for an old backup and delete it if it's older than the cutoff time
 
 if __name__ == "__main__":
     # Example usage
